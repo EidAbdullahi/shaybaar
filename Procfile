@@ -1,0 +1,1 @@
+web: gunicorn jubaland.wsgi --log-file -

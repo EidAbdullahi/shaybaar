@@ -1,0 +1,246 @@
+{%extends 'base.html'%}
+{% load static %}
+
+{% block content %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+  <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+    
+
+</head>
+
+<body>
+    <section id="until">
+    <div class="container">
+    <div class="untitled">
+        <div class="untitled__slides">
+          <div class="untitled__slide">
+            <div class="untitled__slideBg"></div>
+            <div class="untitled__slideContent">
+              <span style="color: aqua;">TRUST</span> 
+              <span style="color: rgb(250, 243, 247);">EQUITY</span><br><br>
+              <a class="button" href="https://unsplash.com/@scoutthecity" target="/black">Unsplash Profile</a>
+            </div>
+          </div>
+          <div class="untitled__slide">
+            <div class="untitled__slideBg"></div>
+            <div class="untitled__slideContent">
+              
+              <span style="color: black;">INSPECTION</span> 
+              <span></span>
+              <!-- <a class="button" href="https://unsplash.com/@madbyte" target="/black">Unsplash Profile</a> -->
+            </div>
+          </div>
+          <div class="untitled__slide">
+            <div class="untitled__slideBg"></div>
+            <div class="untitled__slideContent">
+              <span style="color: aqua;">Quality</span> 
+              <span style="color: chartreuse;">TESTING</span>
+              <!-- <a class="button" href="https://unsplash.com/@maicoamorim" target="/black">Unsplash Profile</a> -->
+            </div>
+          </div>
+          <div class="untitled__slide">
+            <div class="untitled__slideBg"></div>
+            <div class="untitled__slideContent">
+              <span style="color: blueviolet;">GOOD </span> 
+              <span style="color: chartreuse;">management</span>
+              <!-- <a class="button" href="https://unsplash.com/@mariocalvo" target="/black">Unsplash Profile</a> -->
+            </div>
+          </div>
+        </div>
+        <div class="untitled__shutters"></div>
+      </div>
+    </div>
+      
+</section>
+    
+
+
+
+    <br><br>
+    <div class="container main-container">
+        <!-- Welcome Section Starts -->
+        <section class="welcome-area">
+
+            <div class="row">
+                <div class="col-md-6 col-xs-12">
+                    <h2 class="main-heading1 lite">Welcome To Jubaland quality control service</h2>
+                    <p align="justify">JQCS provides quality control inspections, factory audits, supplier evaluations,
+                        consumer product testing, production control and management, and quality control consulting
+                        throughout Somali Region.
+
+                        It has been said that trust is hard to earn and easy to lose. This has never been more true,
+                        than in today’s consumer goods market. When a consumer buys your product, a promise has been
+                        made in terms of form, function, and usability. Keeping that promise is the cornerstone to your
+                        success. With product recalls and compromised quality at historically high levels, JQCS can help
+                        you stand out from the crowd by making sure to keep that promise through our comprehensive
+                        quality control solutions. Recognized in the industry for our best in class training and robust
+                        ethical standards, JQCS quality assurance, testing, and inspection solutions deliver you the
+                        peace of mind and confidence that your products meet your exacting quality standards and align
+                        with customer expectations..</p>
+                    </p>
+                </div>
+                <div class="col-md-6 col-xs-12">
+                    <!-- <img src="{% static 'image/istock.jpg' %}" alt="image" class="img-responsive img-style1"
+                        height="350px" width="600px"> -->
+                        {% if video %}    
+                    {% for x in video %}
+                    <h3 class="text-center mt-2 mb-2">{{x.caption}}</h3>
+                    <video class="embed-responsive embed-responsive-21by9" controls="controls">
+                        <source src="{{x.video.url}}" type="video/mp4"  style="height: 300;" />
+                    </video>
+                    {% endfor %}
+                    {% else %}
+                  
+                  
+                    <img src="{% static 'image/4n.jpg' %}" alt="image" height="350" width="500" >
+                  
+                  </video>
+                    {% endif %}
+                </div>
+            </div>
+    </div>
+    </section>
+    <!-- Welcome Section Ends -->
+
+    <!-- Main Container Ends -->
+
+    <br>
+    <br>
+
+    <section id="gallery">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="card">
+                        <img src="{% static 'image/photo-4.jpeg' %}" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">About JQCS</h5>
+                            <p class="card-text">JQCS provides quality control inspections, factory audits, supplier evaluations, consumer product testing, production control and management, and quality control consulting throughout Somali Region.</p>
+                            <a href="" class="btn btn-outline-success btn-sm">Read More</a>
+                            <a href="" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card">
+                        <img src="{% static 'image/appa.jpeg' %}" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">OUR SERVICES</h5>
+                            <p class="card-text">It is the policy of the Jubaland Quality Control Services (JQCS) to provide inspection services that consistently meet or exceed requirements of our Customers. We achieve this goal by implementing Quality Management Systems that conforms to ISO/IEC 17020 and emphasis:</p>
+                            <a href="" class="btn btn-outline-success btn-sm">Read More</a>
+                            <a href="" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card">
+                        <img src="{% static 'image/photo.jpeg' %}" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">QUALITY CONTROL</h5>
+                            <p class="card-text">It is the policy of the Jubaland Quality Control Services (JQCS) to provide inspection services that consistently meet or exceed requirements of our Customers. We achieve this goal by implementing Quality Management Systems that conforms to ISO/IEC 17020 and emphasis:</p>
+                            <a href="" class="btn btn-outline-success btn-sm">Read More</a>
+                            <a href="" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="py-5">
+        <div class="container">
+            <!-- FOR DEMO PURPOSE -->
+            <div class="row">
+                <div class="col-lg-6 mx-auto">
+                    <header class="text-center pb-5">
+                        <h1 class="h2">REVIEWS</h1>
+                        <p>SOME OF OUR CLIENTS REVIEW.<br> </p>
+
+                    </header>
+                </div>
+            </div><!-- END -->
+
+
+            <div class="row">
+                <div class="col-lg-4 mx-auto">
+
+                    <!-- CUSTOM BLOCKQUOTE -->
+                    <blockquote class="blockquote blockquote-custom bg-white p-5 shadow rounded">
+                        <div class="blockquote-custom-icon bg-info shadow-sm"><i
+                                class="fa fa-quote-left text-white"></i></div>
+                        <p class="mb-0 mt-2 font-italic">"JQCS provides the best quality control service in somalia .I was delighted with the warm reception and quality of management.Thanks to the service they provide to jubaland people <a href="#"
+                                class="text-info">@consequat</a>."</p>
+                        <footer class="blockquote-footer pt-4 mt-4 border-top">Jubaland health minister
+                            <cite title="Source Title"></cite>
+                        </footer>
+                    </blockquote><!-- END -->
+
+                </div>
+                <div class="col-lg-4 mx-auto">
+
+                    <!-- CUSTOM BLOCKQUOTE -->
+                    <blockquote class="blockquote blockquote-custom bg-white p-5 shadow rounded">
+                        <div class="blockquote-custom-icon bg-info shadow-sm"><i
+                                class="fa fa-quote-left text-white"></i></div>
+                        <p class="mb-0 mt-2 font-italic">"I really thank JQCS for the quality service they provide .I have been their customer for quite sometimes since then I have got in love with the service you provide to the people  <a href="#"
+                                class="text-info">@consequat</a>."</p>
+                        <footer class="blockquote-footer pt-4 mt-4 border-top">Abdiwahab Hassan
+                            <cite title="Source Title"></cite>
+                        </footer>
+                    </blockquote><!-- END -->
+
+                </div>
+                <div class="col-lg-4 mx-auto">
+
+                    <!-- CUSTOM BLOCKQUOTE -->
+                    <blockquote class="blockquote blockquote-custom bg-white p-5 shadow rounded">
+                        <div class="blockquote-custom-icon bg-info shadow-sm"><i
+                                class="fa fa-quote-left text-white"></i></div>
+                        <p class="mb-0 mt-2 font-italic">"Thanks to  JQCS jubaland is now free from expired items i.e food ,medicine and drinking juice/water. JQCS has provided quality testing service to the people and handled many cases of low quality goods. <a href="#"
+                                class="text-info">@consequat</a>."</p>
+                        <footer class="blockquote-footer pt-4 mt-4 border-top">Someone famous in
+                            <cite title="Source Title">Source Title</cite>
+                        </footer>
+                    </blockquote><!-- END -->
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<style>
+    html,body{
+        overflow-x: hidden;
+    }
+</style>
+
+</html>
+
+
+{%endblock%}

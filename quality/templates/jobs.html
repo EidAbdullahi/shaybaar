@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container">
+<div class="row">
+    
+    {% if job %}
+    {% for jobs in job %}
+    <div class="col-md-4">
+        
+            
+                <h3 class="card-title"> {{jobs.title }}</h3>
+                <br>
+                <p class="card-text"><strong>Role:</strong>{{jobs.role}}</p>
+                <br>
+                <p class="card-text"><strong>Desc:</strong>{{jobs.desc}}</p>
+                <br>
+                <p class="card-text"><strong>Salary:</strong>{{jobs.salary}}</p>
+                <p class="card-text">Date posted:{{jobs.post_date}}</p>
+                
+                <a href="{% url 'application' %}"><button type="button" class="btn btn-primary">click here to apply</button></a>
+          
+        </div>
+    </div>
+    {% endfor %}
+    {% else %}
+    <p>No jobs adverised</p>
+    {% endif %}
+    
+    
+    
+    
+</div>
+</div>
+
+
+
+
+{% endblock %}

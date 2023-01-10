@@ -1,0 +1,58 @@
+{%extends 'base.html'%}
+{% load bootstrap4 %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="container">
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-8" style="text-align: center;">Contact us</h1>
+
+        </div>
+    </div>
+
+        <div class="row">
+
+            <div class="col-md-6">
+                <div class="jumbotron">
+
+                <h2>Get in touch with us by filling the form below</h2>
+                <hr>
+                <form method="post">
+                    {% csrf_token %}
+                    {{ form|crispy }}
+                    <input type="submit" value="Submit"
+                        style="background-color: #008CBA;border-radius: 20px; box-shadow: none; border: none; width: 200px; height: 50px;color: aliceblue;text-align: center;">
+
+                </form>
+                </a>
+            </div>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-4">
+                <div class="jumbotron">
+                <!-- Address Starts -->
+
+                <!-- Box #1 Starts -->
+                <div class="block-1">
+
+                    <h4>Come and Visit</h4>
+                    <ul class="list-unstyled">
+                        <li>caymis road.</li>
+                        <li>P.O Box 2272, kismayo, somalia.</li>
+                        <li>+  252616772852 </li>
+                        <li>+  252616772852 </li>
+                        <li>info@jubalandquality.com </li>
+                    </ul>
+                </div>
+                <!-- Box #1 Ends -->
+
+                </div>
+                <!-- Address Ends -->
+            </div>
+        </div>
+    </div>
+   
+    <!-- Contact Content Ends -->
+
+    {%endblock%}

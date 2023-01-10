@@ -1,0 +1,103 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+    <title>Document</title>
+</head>
+<body class="container-fluid body_section">
+    <!-- Header Starts -->
+		<header class="main-header" >
+            <!-- Nested Container Starts -->
+                
+                    
+                <!-- Top Bar Starts -->
+                    <div class="top-bar hidden-sm hidden-xs">
+                        <div class="row">
+                            <div class="col-sm-2"></div>
+                            <div class="col-sm-5">
+                                <span>Opening Hours:</span>  Mon To Fri - 8:00am - 4:30pm, Sat &amp; 8:00am - 1:00pm
+                            </div>
+                            <div class="col-sm-5">
+                                <ul class="list-unstyled list-inline">
+                                    <li><a href="mailto:info@skylightchemicals.co.ke"  style="text-decoration: none; color: black;">
+                                        <i class="fa fa-envelope-o"></i>
+                                        info@jubalandquality.com
+                                    </a></li>
+                                    <li><i class="fa fa-phone"></i> Call Us: + 252616772852 | + 252616772852</li>
+                                </ul>
+                        
+                            </div>
+                        </div>
+                        <hr>
+                    </div> 
+                    
+                 <div class="bs-example">
+                <nav class="navbar navbar-expand-lg navbar-light .bg-transparent">
+                    <a href="#" class="navbar-brand">
+                        <img src="{% static 'image/jubaland-logo.png' %}"  height="150"  alt="CoolBrand">
+                      JUBALAND QUALITY CONTROL SERVICE
+                    </a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button> 
+            
+                     <div class="navbar-collapse  justify-content-end " id="navigationbar">
+                        <div class="navbar-nav">
+                            
+                            <a href="{% url 'welcome' %}" class="nav-item nav-link active">HOME</a>
+                            <a href="{% url 'about' %}" class="nav-item nav-link active">ABOUT</a>
+                            <a href="{% url 'service' %}"class="nav-item nav-link active">SERVICES</a>
+                            <a href="{% url 'myPhotos' %}" class="nav-item nav-link active">OUR TEAM</a>
+                            <a href="{% url 'job' %}" class="nav-item nav-link active">JOBS</a>
+                            <a href="{% url 'contact' %}" class="nav-item nav-link active">CONTACT</a>
+                        
+                        </div>
+                        
+                    </div>  
+                    
+                </nav>
+            </div>
+
+
+            <!-- <nav class="navbar navbar-expand-lg navbar-light ">
+                <a class="navbar-brand brand-name" href="#">Abdisamad</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                      <a class="nav-link headerachor" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link headerachor" href="Education.html">Education</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link headerachor" href="skill.html">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link headerachor" href="Project.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link headerachor" href="contact.html">Contact Me</a>
+                    </li>
+                  </ul>
+              </nav>
+             -->
+            
+            
+        
+            <!-- Nested Container Ends -->
+            </header>
+        <!-- Header Ends -->
+</body>
+</html>

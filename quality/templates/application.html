@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="jumbotron">
+
+                <hr>
+                <h2>Application form</h2>
+                <form method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form|crispy }}
+                    <input type="submit" value="Submit"
+                        style="background-color: #008CBA;border-radius: 20px; box-shadow: none; border: none; width: 200px; height: 50px;color: aliceblue;text-align: center;">
+
+                </form>
+                <br><br>
+                <a href="{% url 'welcome' %}"><button type="button" class="btn btn-primary">Return home</button></a>
+                
+            </div>
+           
+        </div>
+    </div>
+  
+</div>
+
+{% endblock %}

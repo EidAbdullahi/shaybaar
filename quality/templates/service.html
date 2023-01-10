@@ -1,0 +1,602 @@
+{%extends 'base.html'%}
+{% load static %}
+
+{% block content %}
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Page Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link rel="stylesheet" href="styles.css"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js">
+        </script>
+       <!--  <script type="text/javascript">
+            $(document).ready(function(){
+            $('.btn').click(function(){
+            $('nav').toggleClass('active');
+            })
+            $('ul li').click(function(){
+            $(this).siblings().removeClass('active')
+            $(this).toggleClass('active')
+            })
+            })
+        </script> -->
+    </head>
+    <body>
+       <br><br>
+        <!--slider-1-->
+        <div class="slider-container slider-container-01">
+            <div class="slider">
+                <div class="item-1">
+                    <h2 class="item-header">Services.</h2>
+                    <div class="box box-shadow--style-1">
+                        
+                  </div>
+                    <p class="item-para"></p>
+                    <button class="Slider-btn-1">Learn more</button>
+                </div>
+                <div class="item-2">
+                    <h2 class="item-header">Our management.</h2>
+                    <div class="box box-shadow--style-1">
+                      
+                  </div>
+                    <p class="item-para">Quality control.</p>
+                    <button class="Slider-btn-1">Lern more</button>
+                </div>
+               
+                
+            </div>
+            <div id="active">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+              <div class="col-sm">
+                <h2 class="round-img--heading">Quality control</h2>
+                    <p class="round-img--text">It is the policy of the Jubaland Quality Control Services (JQCS) to provide inspection services that consistently meet or exceed requirements of our Customers</p>
+                    <a class="btn-secondary" href= "#">View detail &#187; </a>
+              </div>
+              <div class="col-sm">
+                <h2 class="round-img--heading">Quality assuarance and inspection</h2>
+                    <p class="round-img--text">The only true measure of acceptable quality is customer satisfaction, which takes into account both objective and subjective interpretations of the needs and expectations of customers. If customers are satisfied with the products and services offered, the organization has not only correctly interpreted customer needs and expectations but it is also providing products and services of acceptable quality.</p>
+                    <a class="btn-secondary" href="#">View detail &#187; </a>
+              </div>
+              <div class="col-sm">
+                <h2 class="round-img--heading">Testing service</h2>
+                    <p class="round-img--text secondary-font">The testing services department implements a quality management system based on ISO 17025 (General requirements for the competence of testing and calibration laboratories); all laboratories in the department are accredited to ISO17025 and all laboratory operations implemented in line with the requirements of the standards.</p>
+                    <a class="btn-secondary" href="#">View detail &#187; </a>
+              </div>
+            </div>
+          </div>
+        
+        </div>
+        <div class="wrapper">
+            <hr class="hr-line"></hr>
+        </div>
+        <!--card-container-1-->
+        <div class="wrapper container card card-1">
+            <div class="base-heading card-heading card-heading-1">
+                <!-- <div class="box"></div> -->
+                <div class="box box-shadow--style-1">
+                    <img src="{% static 'image/istock.jpg' %}" height="400px" alt=''/>
+                </div>
+                <div class="heading">
+                    <h1>Testing service.</h1> 
+                    <p>The testing services department implements a quality management system based on ISO 17025 (General requirements for the competence of testing and calibration laboratories); all laboratories in the department are accredited to ISO17025 and all laboratory operations implemented in line with the requirements of the standards.</p>
+                    <p>Testing product details</p>
+                    <p>our primary testing products and services include</p>
+                    
+                        <p>Professionalism and Excellence;</p>
+                        <p>Human Resource Development;</p>
+                        <p>Maintenance of a Work Culture which actively seeks opportunities for continual improvement; and</p>
+                        <p>The application of the State-of-Art Technologies.</p>
+                        
+                    
+                </div>
+            </div>	
+        </div>
+        <!--card-container-2-->
+        <div class="wrapper">
+            <hr class="hr-line"></hr>
+        </div>
+        <div class="wrapper container card card-2">
+            <div class="base-heading card-heading card-heading-2">
+                <div class="box box-shadow--style-1">
+                    <img src="{% static 'image/satistaction.png' %}" height="300px">
+                </div>
+                <div class="heading">
+                    <h1>Quality control.</h1> 
+                    <p>It is the policy of the Jubaland Quality Control Services (JQCS) to provide inspection services that consistently meet or exceed requirements of our Customers. We achieve this goal by implementing Quality Management Systems that conforms to ISO/IEC 17020 and emphasis:</p>
+                    
+                        <p>Professionalism and Excellence;</p>
+                        <p>Human Resource Development;</p>
+                        <p>Maintenance of a Work Culture which actively seeks opportunities for continual improvement; and</p>
+                        <p>The application of the State-of-Art Technologies.</p>
+                        
+                    
+                </div>
+            </div>	
+        </div>
+        <div class="wrapper">
+            <hr class="hr-line"></hr>
+        </div>
+        <!--card-container-3-->
+        <div class="wrapper container card card-3">
+            <div class="base-heading card-heading card-heading-3">
+                <div class="box box-shadow--style-1">
+                    <img src="{% static 'image/IMG1.jpg' %}" alt=''/>
+                </div>
+                <div class="heading">
+                    <h1>Quality assuarance and inspection.</h1> 
+                    <p>In its broadest sense, quality is a degree of excellence: the extent to which something is fit for its purpose. In the narrow sense, product or service quality is defined as conformance with requirement, freedom form defects or contamination, or simply a degree of customer satisfaction. These are some of the definitions which are often quoted and any of which may be true in certain circumstances.</p>
+                    <p>The only true measure of acceptable quality is customer satisfaction, which takes into account both objective and subjective interpretations of the needs and expectations of customers. If customers are satisfied with the products and services offered, the organization has not only correctly interpreted customer needs and expectations but it is also providing products and services of acceptable quality.</p>
+                    <p>JQCS has provided quality assuarance since it was founded , our goal is to satisfy our customer's need</p>
+                </div>
+            </div>	
+        </div>
+       
+    </body>
+</html>
+ 
+   
+    
+ 
+  <br><br><br><br><br><br><br>
+
+
+</body>
+
+</html>
+<style>
+    
+
+  
+.headding-h2 {
+	color: #6c757d !important;
+}
+p {
+	margin: 0 0 1.25rem;
+	line-height: 1.5;
+}
+
+/* body {
+    margin: 0;
+    padding: 0;
+	background :#fff;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+} */
+.hr-line {
+	background: #fff; 
+	box-sizing: content-box;
+	height: 0;
+	overflow: visible;
+	border-top: 1px solid rgba(0,0,0,.1);
+}
+
+.wrapper {
+	max-width: 1300px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+/*/////////////////////////////////////slider-container/////////////////////////////*/
+
+
+
+
+.btn span  {
+	display: block;
+	margin: 6px;
+	width: 40px;
+	height: 3px; 
+	/* background:#16ebcb; */
+} 
+
+ .btn  {
+	position: absolute;
+	right: 20px;
+	color:#beeae1;
+	float: right;
+	line-height: 50px;
+	font-size: 24px;
+	cursor: pointer;
+	display: none;
+	font-size: 14px;
+}
+
+
+/*------------------------Slider-------------------------------*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+.slider-container {
+	width: 100%;
+	height: auto;
+	background: #777777;
+	padding-top: 60px;
+	overflow: hidden;
+}
+
+.slider  {
+	height: 30vh;
+	margin: auto;
+	text-align: center;
+	display: center;
+    justify-content: space-evenly;
+	align-items: center;
+	position: relative; 
+	padding-top: 5%;
+}
+.item-header {
+	font-size: 2.5rem;
+	font-weight: 500;
+	line-height: 1.2;
+}
+.item-para {
+	font-size: 1.25rem;
+	line-height: 1.4;
+}
+
+.item-1, 
+.item-2, 
+.item-3  {
+	position: absolute;
+  	display: block;
+	width: 60%;
+	animation-duration: 20s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	color: #fff;
+}
+
+.item-1 {
+	animation-name: anim-1;
+	text-align: right;	
+}
+
+.item-2 {
+	animation-name: anim-2;
+	text-align: center;
+	
+}
+
+.item-3 {
+	animation-name: anim-3;
+	text-align: left;
+	
+}
+
+ 
+@keyframes anim-1  {
+	0%, 8.3% { right: -100%; opacity: 0; }
+	8.3%,25% { right: 20%; opacity: 1; }
+	33.33%, 100% { right: 110%; opacity: 0; }
+}
+
+@keyframes anim-2 {
+	0%, 33.33% { right: -100%; opacity: 0; }
+	41.63%, 58.29% { right: 20%; opacity: 1; }
+	66.66%, 100% { right: 110%; opacity: 0; }
+}
+
+@keyframes anim-3 {
+	0%, 66.66% { right: -100%; opacity: 0; }
+	74.96%, 91.62% {right: 20%; opacity: 1; }
+	100% { right: 110%; opacity: 0; }
+}
+ 
+.Slider-btn-1  {
+	background: #007bff;
+	border-radius: 5px;
+	border: none;
+	color: #fff;
+	font-family: sans-serif;
+	font-size: 18px;
+	height: 50px;
+	min-width: 80px;
+	width: 15%;
+	cursor: pointer;
+}
+
+.Slider-btn-1:hover  {
+	background: #030d7e;
+}
+#active {
+	text-align: center; 
+	margin: 1%  2%;
+}
+
+#active label {
+	width: 30px;
+	height: 3px;
+	background: #ccc;
+	display: inline-block;
+	cursor: pointer;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 1px;
+  }
+  active label:hover {background: rgba(239, 239, 239, 0.952);}
+
+
+
+
+/*/////////////////////////////////////Box-container/////////////////////////////*/
+.container  {
+	position: relative;
+  	background: #fff;
+	height: auto;
+  	margin: 2% auto;
+  	padding: 2%;
+  	width: 80%;
+}
+
+.base-heading  {
+	width: 85%;
+	margin: 10px auto;
+  	align-items: center;
+  	background: #fff;
+  	display: flex;
+  	flex-direction: row-reverse;
+}
+
+.card-heading-2 {
+	flex-direction: row;
+}
+
+.heading  {
+	width: 75%;
+	position: relative;
+  	background: #fff;
+  	height: 15%;
+	text-align: center;
+	margin: 25px;
+	color: #5a5a5a;
+	line-height: 1;	
+}
+
+.box  {
+	background: #494c51;
+	margin: auto;
+	/* height: 100%;
+	width: 100%; */
+	max-height: 500px;
+	max-width: 500px;
+	width: auto;
+}
+
+.box img {
+	width: 100%;
+	height: auto;
+}
+
+/* .card-1 .box  {
+	background: transparent url('http://unsplash.it/500/500?random&gravity=south');
+}
+.card-2 .box  {
+	background: transparent url('http://unsplash.it/500/500?random&gravity=east');
+}
+.card-3 .box  {
+	background: transparent url('http://unsplash.it/500/500?random&gravity=center');
+} */
+
+.heading p  {
+	font-size: 1.25rem;
+	font-weight: 300;
+	color: #5a5a5a;
+	line-height: 1.5;
+	text-align: left
+
+}
+/*/////////////////////////////////////Round-container/////////////////////////////*/
+
+.round-img-container--outer  {
+	position: relative;
+  	background: #fff;
+	height: auto;
+  	margin: 4% auto;
+  	width: 80%;
+}
+
+.round-img-container--inner  {
+	margin: 10px auto;
+  	align-items: center;
+  	background: #fff;
+  	display: flex;
+  	flex-direction: column;
+  	justify-content: center;
+}
+
+.grid  {
+	position: relative;
+  	background: #fff;
+  	height: 15%;
+  	text-align: center;
+  	line-height: 25px;
+	padding: 10px 24px;
+	flex: 0 0 33.333333%;
+	/* max-width: 33.333333%; */
+}
+
+.round-img {
+	background: #494c51;
+	content: '';
+	height: 10vh;
+	margin: auto;
+	width: 10vh;
+}
+.round-img--heading {
+	color: rgb(90, 90, 90);
+	font-size: 2em;
+	font-weight: 400;
+	line-height: 1.2;
+}
+.btn-secondary {
+	width: 20px;
+	height: 10%;
+	background: #6c757d;
+	padding: 6px 35px;
+	font-size: 1rem;
+	line-height: 1.5;
+	border-radius: .25rem;
+	color: #fff;
+	font-size: 1rem;
+	text-decoration: none;
+	font-weight: 400;
+}
+.btn-secondary:hover {
+	border-color: #333434;
+}
+::after::before {
+	box-sizing: border-box;
+}
+
+/* .round-img-container--outer p  {
+	margin: 10px;
+} */
+
+.round-img--text  {
+	color: #5a5a5a;
+}
+
+.round-img--single-1 .round-img {
+	background: transparent url('http://unsplash.it/300/200?random&gravity=south');
+}
+
+.round-img--single-2 .round-img {
+	background: transparent url('http://unsplash.it/300/200?random&gravity=east');
+}
+
+.round-img--single-3 .round-img {
+	background: transparent url('http://unsplash.it/300/200?random&gravity=north');
+}
+
+.hr-line {
+	 width: 85%; 
+	height: 0px;
+	color: rgba(0,0,0,.1);
+}
+
+
+
+
+/*------------------------round media quary------------------*/
+@media(min-width: 990px) {
+
+	.round-img-container--outer {
+		width: 90%;
+		box-sizing: border-box;
+	}
+
+	.round-img-container--inner  {
+		width: 88%;
+		height: auto;
+		flex-direction: row;
+		max-width: 1200px;
+	}
+}
+/*-------------------------Box-media-quary---------------------*/
+@media(max-width: 990px) {
+
+	.container {
+		width: 90%;
+		box-sizing: border-box;
+	}
+
+	.base-heading  {
+		width: 80%;
+		height: auto;
+	}
+
+	/* .box  {
+		/* height: 200px;
+		width: 500px; */
+    /* }
+} */ 
+
+@media(max-width: 770px) {
+		
+.container {
+		width: 90%;
+		box-sizing: border-box;
+	}
+
+	.base-heading  {
+		width: 100%;
+		/*height: auto;*/
+		flex-direction: column;
+	}
+
+	.box  {
+		/* height: 20vh;
+		width: 80%; */
+		width: 100%;
+	}
+
+
+/*-------------------------Navication-media-quary------------------------*/
+
+@media(max-width: 780px) {
+	header{
+		padding: 0 20px;
+	}
+	.btn {
+		display: block;
+	}
+	header nav
+	{	position: absolute;
+		width: 100%;
+		height:calc(100vh -50px);
+		background-color: #333;
+		top:50px;
+		left: -100%;
+		transition: 0.5s;
+	}
+	header nav.active{
+		left:0;
+	}
+	header nav ul{
+		display: block;
+		text-align: center;
+	}
+	header nav ul li a{
+		border-bottom: 1px solid rgba(0,0,0,.2)
+	}
+	.search-div {
+		text-align: center;
+		
+	}
+}
+/*-----------------------------------------END--------------------------------*/
+
+
+
+/*==============================
+=            Helper            =
+==============================*/
+.round {
+	border-radius: 50%;
+}
+
+.box-shadow--style-1 {
+	box-shadow: 10px 15px 15px;
+}
+
+.box-shadow--style-2 {
+	box-shadow: 6px 6px 10px  #494c51;
+}
+</style>
+{%endblock%}
