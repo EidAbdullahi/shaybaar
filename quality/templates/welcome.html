@@ -18,54 +18,66 @@
 </head>
 
 <body>
-    <section id="until">
-    <div class="container">
-    <div class="untitled">
-        <div class="untitled__slides">
-          <div class="untitled__slide">
-            <div class="untitled__slideBg"></div>
-            <div class="untitled__slideContent">
-              <span style="color: aqua;">TRUST</span> 
-              <span style="color: rgb(250, 243, 247);">EQUITY</span><br><br>
-              <a class="button" href="https://unsplash.com/@scoutthecity" target="/black">Unsplash Profile</a>
+    <section class="slideshow">
+        <div class="content">
+           <div class="slider-content">
+              <figure class="shadow"><img src="{% static 'image/4n.jpg' %}"></figure>
+              <figure class="shadow"><img src="{% static 'image/satistaction.png' %}"></figure>
+              <figure class="shadow"><img src="{% static 'image/appa.jpeg' %}"></figure>
+              <figure class="shadow"><img src="{% static 'image/img2.jpeg' %}"></figure>
+              <figure class="shadow"><img src="{% static 'image/img3.jpg' %}"></figure>
+              <figure class="shadow"><img src="{% static 'image/IMG4.jpg' %}"></figure>
+              <figure class="shadow"><img src="{% static 'image/img5.jpg' %}"></figure>
+              <figure class="shadow"><img src="{% static 'image/jubaland100.png' %}"></figure>
+              <figure class="shadow"><img src="{% static 'image/istock.jpg' %}"></figure>
+           </div>
+        </div>
+     </section>
+     <section id="until">
+        <div class="container">
+        <div class="untitled">
+            <div class="untitled__slides">
+              <div class="untitled__slide">
+                <div class="untitled__slideBg"></div>
+                <div class="untitled__slideContent">
+                  <span style="color: aqua;">Trust</span> 
+                  <span style="color: blueviolet;">Equity</span><br><br>
+                  <a class="button" href="https://unsplash.com/@scoutthecity" target="/black">Unsplash Profile</a>
+                </div>
+              </div>
+              <div class="untitled__slide">
+                <div class="untitled__slideBg"></div>
+                <div class="untitled__slideContent">
+                  
+                  <span style="color: black;">inspection</span> 
+                  <span></span>
+                  <a class="button" href="https://unsplash.com/@madbyte" target="/black">Unsplash Profile</a> -->
+                </div>
+              </div>
+              <div class="untitled__slide">
+                <div class="untitled__slideBg"></div>
+                <div class="untitled__slideContent">
+                  <span style="color: aqua;">Quality</span> 
+                  <span style="color: chartreuse;">testing</span>
+                  <a class="button" href="https://unsplash.com/@maicoamorim" target="/black">Unsplash Profile</a>
+                </div>
+              </div>
+              <div class="untitled__slide">
+                <div class="untitled__slideBg"></div>
+                <div class="untitled__slideContent">
+                  <span style="color: blueviolet;">Quality </span> 
+                  <span style="color: chartreuse;">management</span>
+                   <a class="button" href="https://unsplash.com/@mariocalvo" target="/black">Unsplash Profile</a> 
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="untitled__slide">
-            <div class="untitled__slideBg"></div>
-            <div class="untitled__slideContent">
-              
-              <span style="color: black;">INSPECTION</span> 
-              <span></span>
-              <!-- <a class="button" href="https://unsplash.com/@madbyte" target="/black">Unsplash Profile</a> -->
-            </div>
-          </div>
-          <div class="untitled__slide">
-            <div class="untitled__slideBg"></div>
-            <div class="untitled__slideContent">
-              <span style="color: aqua;">Quality</span> 
-              <span style="color: chartreuse;">TESTING</span>
-              <!-- <a class="button" href="https://unsplash.com/@maicoamorim" target="/black">Unsplash Profile</a> -->
-            </div>
-          </div>
-          <div class="untitled__slide">
-            <div class="untitled__slideBg"></div>
-            <div class="untitled__slideContent">
-              <span style="color: blueviolet;">GOOD </span> 
-              <span style="color: chartreuse;">management</span>
-              <!-- <a class="button" href="https://unsplash.com/@mariocalvo" target="/black">Unsplash Profile</a> -->
-            </div>
+            <div class="untitled__shutters"></div>
           </div>
         </div>
-        <div class="untitled__shutters"></div>
-      </div>
-    </div>
-      
-</section>
+          
+    </section>
+        
     
-
-
-
-    <br><br>
     <div class="container main-container">
         <!-- Welcome Section Starts -->
         <section class="welcome-area">
@@ -113,9 +125,7 @@
 
     <!-- Main Container Ends -->
 
-    <br>
-    <br>
-
+    
     <section id="gallery">
         <div class="container">
 
@@ -220,17 +230,17 @@
             </div>
         </div>
     </section>
-
-
-
-
-
-
-
-
-
-
-
+    <br>    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
 
 </body>
@@ -238,6 +248,88 @@
     html,body{
         overflow-x: hidden;
     }
+    @keyframes rotate {
+        from{
+          transform: rotateY(0deg);
+        }
+        to{
+            transform: rotateY(360deg);
+        }
+      }
+    .slideshow{
+        margin: 0 auto;
+        padding-top: 50px;
+        height: 700px;
+        perspective: 1000px;
+      }
+      .content{
+        margin: auto;
+        width: 150px;
+        perspective: 1000px;
+        position:relative;
+        padding-top: 80px;
+        transform-style: preserve-3d;
+      }
+      .slider-content{
+        width: 100%;
+        position:absolute;
+        float:right;
+        animation: rotate 15s infinite linear;
+        transform-style: preserve-3d;
+      }
+      .slider-content:hover{
+        cursor: pointer;
+        animation-play-state: paused;
+      }
+      .slider-content figure{
+        width:180px;
+        height:120px;
+        border:1px solid #555;
+        overflow:hidden;
+        position:absolute;
+      }
+      .slider-content img{
+        image-rendering: auto;
+        transition: all 300ms;
+        width: 100%;
+        height: 100%;
+      }
+      .slider-content img:hover{
+        transform: scale(1.2); 
+        transition: all 300ms; 
+     } 
+     .shadow{ 
+        position: absolute; 
+        box-shadow: 0px 0px 0px #000; 
+     }
+     .slider-content figure:nth-child(1){
+        transform:rotateY(0deg) translateZ(300px);
+      }
+       
+      .slider-content figure:nth-child(2){
+        transform:rotateY(40deg) translateZ(300px);
+      }
+      .slider-content figure:nth-child(3){
+        transform:rotateY(80deg) translateZ(300px);
+      }
+      .slider-content figure:nth-child(4){
+        transform:rotateY(120deg) translateZ(300px);
+      }
+      .slider-content figure:nth-child(5){
+        transform:rotateY(160deg) translateZ(300px);
+      }
+      .slider-content figure:nth-child(6){
+        transform:rotateY(200deg) translateZ(300px);
+      }
+      .slider-content figure:nth-child(7){
+        transform:rotateY(240deg) translateZ(300px);
+      }
+      .slider-content figure:nth-child(8){
+        transform:rotateY(280deg) translateZ(300px);
+      }
+      .slider-content figure:nth-child(9){
+        transform:rotateY(320deg) translateZ(300px);
+      }
 </style>
 
 </html>
