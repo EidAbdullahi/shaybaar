@@ -74,24 +74,27 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'jubaland.wsgi.application'
 
+# CREATE USER titus WITH ENCRYPTED PASSWORD '12345';
+# CREATE DATABASE titus1;
+# GRANT ALL PRIVILEGES ON DATABASE titus1 TO titus;
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'testar',
-#         'USER':'jqcs',
-#         'PASSWORD':'test2',
-#     }
-# }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'titus1',
+        'USER':'eid',
+        'PASSWORD':'eid12345',
     }
 }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 cloudinary.config( 
   cloud_name = "duwcyaitg", 
   api_key = "845663342138117", 
